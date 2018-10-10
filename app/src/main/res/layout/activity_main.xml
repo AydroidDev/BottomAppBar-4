@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+
     android:background="@drawable/background_main">
 
     <ScrollView
@@ -36,14 +37,17 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        style="Widget.MaterialComponents.BottomAppBar">
 
         <android.support.design.bottomappbar.BottomAppBar
+            app:navigationIcon="@drawable/ic_menu"
             android:id="@+id/app_bar"
             android:layout_gravity="bottom"
             android:backgroundTint="#3E586F"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="?attr/actionBarSize"
+            app:fabAlignmentMode="center">
 
         </android.support.design.bottomappbar.BottomAppBar>
 
