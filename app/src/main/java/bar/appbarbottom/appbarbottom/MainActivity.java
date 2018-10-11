@@ -31,14 +31,14 @@ private static FragmentManager fragmentManager;
         }
 
         BottomAppBar bar = (BottomAppBar) findViewById(R.id.app_bar);
+        setSupportActionBar(bar);
 
-
-        bar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Handle the navigation click by showing a BottomDrawer etc.
-            }
-        });
+//        bar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Handle the navigation click by showing a BottomDrawer etc.
+//            }
+//        });
     }
 
     @Override
@@ -56,23 +56,23 @@ switch (view.getId()){
 }
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        switch (id) {
-//            case R.id.app_bar_fav:
-//
-//                return true;
-//            case R.id.app_bar_search:
-//
-//                return true;
-//            case R.id.app_bar_settings:
-//
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.app_bar_fav:
+                fragmentManager.beginTransaction().replace(R.id.fragment_container, new OneFragment()).commit();
+                return true;
+            case R.id.app_bar_search:
+
+                return true;
+            case R.id.app_bar_settings:
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
