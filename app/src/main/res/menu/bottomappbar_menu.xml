@@ -4,18 +4,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/app_bar_fav"
-        android:icon="@drawable/ic_menu"
-        android:title="1"
+        android:id="@+id/item_rate"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="Estimate"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/icon_add"
-        android:title="2"
+        android:id="@+id/item_help"
+        android:icon="@drawable/ic_help_black_24dp"
+        android:title="Help"
         app:showAsAction="ifRoom"/>
+
     <item
-        android:id="@+id/app_bar_settings"
-        android:title="3"
-        app:showAsAction="never"/>
+        android:id="@+id/item_share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="Share"
+        app:showAsAction="ifRoom"/>
+
+
 </menu>

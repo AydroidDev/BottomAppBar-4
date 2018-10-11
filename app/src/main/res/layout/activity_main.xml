@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    style="Widget.MaterialComponents.BottomAppBar">
+    android:background="@drawable/main_background">
 
     <android.support.v4.widget.NestedScrollView
     android:id="@+id/scrollView2"
@@ -17,7 +17,8 @@
     <FrameLayout
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+        android:paddingBottom="65dp">
 
     </FrameLayout>
 
@@ -30,7 +31,7 @@
         android:backgroundTint="#3E586F"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:fabAlignmentMode="center">
+        app:fabAlignmentMode="end">
 
     </android.support.design.bottomappbar.BottomAppBar>
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         app:layout_anchor="@id/app_bar"
         app:fabSize="normal"
-        android:src="@drawable/icon_add"/>
+        android:src="@drawable/home3" />
 
     <!--<android.support.v4.widget.NestedScrollView-->
         <!--android:id="@+id/scrollView2"-->
